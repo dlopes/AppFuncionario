@@ -1,0 +1,70 @@
+﻿@model AppFuncionario.Models.PessoaModel
+<div class="card" style="">
+
+    <div class="row" style="position: relative;">
+        <div class="col-md-8"></div>
+        <div class="col-md-4 qtd-adicioanado" id="header-qtd-adicioanado-@Model.id">
+            <div class="" style="">
+                <span class="fas fas fa-donate" aria-hidden="true" style="" ></span>
+                <span id="valorPessoa_@Model.id">Você não adicionou nada</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body" style="float:right;">
+
+
+        <div class="row">
+
+            <div class="col-md-1">
+
+                <span class="fas fas fa-donate fa-2x" aria-hidden="true" style="color: #059d42;"></span>
+            </div>
+            <div class="col-md-11">
+
+                <h5 class="card-title" style="color: #059d42;">@Model.Employee_name</h5>
+                <p class="card-text">Ao clicar no link abaixo, uma dialog irá aparecer perguntando quantos reais você deseja adicionar a barra de progresso. A barra deve começar em 0.</p>
+
+                <div class="row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-2" style="color: #f2f2f2; font-size:16px;">Total R$ 200,00</div>
+                </div>
+                <div class="progress">
+
+                    <div class="progress-bar bg-success" id="progress_bar_@Model.id" role="progressbar" aria-valuenow="70"
+                         aria-valuemin="0" aria-valuemax="100">
+
+                    </div>
+                </div>
+
+                <br />
+                <input type="hidden" id="id-valor-@Model.id" value="0">
+                <!-- Trigger the modal with a button -->
+                <a href="#" class="PessoaId" style="color: #059d42;" data-toggle="modal" data-target="#myModal" pessoa-id="@Model.id"> <span class="fas fa-plus" aria-hidden="true"></span> Clique aqui para adicionar reais</a>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<br />
+<style>
+    .qtd-adicioanado {
+        background-color: #e14646;
+        color: white;
+        height: 30px;
+        top: -10px;
+    }
+
+    .qtd-adicioanado-span {
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .qtd-adicioanado-prenchida {
+        background-color: #059d42 !important;
+    }
+</style>

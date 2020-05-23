@@ -1,0 +1,77 @@
+﻿<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #28a745; color: white;">
+                <h4 class="modal-title">Quantos reais adicionar para <span></span>?</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card text-white text-center p-3 card_css">
+                            <div class="card-body">
+                                <p class="real-add" onclick="AdiconarReal(25)">R$ 25</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card text-white text-center p-3 card_css">
+                            <div class="card-body">
+                                <p class="real-add" onclick="AdiconarReal(50)">R$ 50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card text-white text-center p-3 card_css">
+                            <div class="card-body">
+                                <p class="real-add" onclick="AdiconarReal(75)">R$ 75</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card text-white text-center p-3 card_css">
+                            <div class="card-body">
+                                <p class="real-add" onclick="AdiconarReal(125)">R$ 125</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <br /><br />
+            </div>
+        </div>
+
+    </div>
+</div>
+<style>
+    .card_css {
+        background-color: #d6f5dd !important;
+        border: 1px solid #d6f5dd;
+        color: #28a745 !important;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .card-columns {
+    }
+
+    .real-add {
+        cursor: pointer;
+    }
+
+    .modal-footer {
+        background-color: #f2f2f2;
+    }
+</style>
