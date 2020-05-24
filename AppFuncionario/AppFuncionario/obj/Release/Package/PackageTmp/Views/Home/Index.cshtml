@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AppFuncionario.Models.PessoaModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        @foreach (var item in Model)
+        {
+             @Html.Partial("~/Views/Home/_Card.cshtml",item)
+                
+        }
+       
+
+    </div>
+    @Html.Partial("~/Views/Home/_AddReal.cshtml")
+
+</div>
+
+
+
+
+
